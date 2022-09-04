@@ -1,0 +1,25 @@
+<ion-content>
+  <div class="fondo">
+    <ion-card>
+      <img src="../../../assets/img/logo usuario.png" class="imagen_login"/>
+      <ion-card-header>
+        <ion-card-subtitle>INGRESAR</ion-card-subtitle>
+        <ion-card-title>DUOC UC</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label>Usuario</ion-label>
+          <ion-input type="text" placeholder="Ingrese usuario" [(ngModel)]="user"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Contraseña</ion-label>
+          <ion-input type="password" placeholder="Ingrese contraseña" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-button (click)="login()">INGRESAR</ion-button>
+      </ion-card-content>
+      <a routerLink='/registrar'>Ir a registrar...</a>
+    </ion-card>
+  </div>
+
+</ion-content>
