@@ -11,13 +11,16 @@ import { UsuarioService } from 'src/app/services/usuario.service';
 export class RegistrarPage implements OnInit {
 
   //VAMOS A CREAR EL GRUPO DEL FORMULARIO:
+  private emailPattern: any = /^(([^<>()[]\.,;:\s@"]+(.[^<>()[]\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/
   alumno = new FormGroup({
     rut : new FormControl('', [Validators.required, Validators.pattern('[0-9]{1,2}.[0-9]{3}.[0-9]{3}-[0-9kK]{1}')]),
     nom_completo: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    fecha_nac: new FormControl('', Validators.required),
+    fecha_nac: new FormControl('', Validators.required) ,  
     semestre: new FormControl('', [Validators.required, Validators.min(1), Validators.max(8)]),
     password: new FormControl('', [Validators.required, Validators.minLength(6), Validators.maxLength(18)]),
-    tipo_usuario: new FormControl('alumno')
+    tipo_usuario: new FormControl('alumno'),
+    Email: new FormControl('', [Validators.required, Validators.minLength(5),])
+
   });
 
   //VAMOS A CREAR UNA VARIABLE PARA OBTENER LA LISTA DE USUARIOS DEL SERVICIO DE USUARIOS:

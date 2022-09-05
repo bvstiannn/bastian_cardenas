@@ -21,7 +21,8 @@ export class UsuarioService {
       fecha_nac: '1990-03-24',
       semestre: 1,
       password: 'satan123',
-      tipo_usuario: 'alumno'
+      tipo_usuario: 'alumno',
+      email: ''
     }
   ];
 

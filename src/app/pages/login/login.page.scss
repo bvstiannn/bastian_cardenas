@@ -1,13 +1,16 @@
+@use '../../../global.scss';
+
+
 .fondo{
     height: 100vh;
-    background-image: url("../../../assets/img/dragonball.webp") ;
+    background-image: url("../../../assets/img/imgduoc.jpg") ;
     background-size: cover;
     text-align: center;
 
 }
 
 ion-card{
-    background:linear-gradient(#17c47c, #9198e5) ;
+    background:linear-gradient(#b5dce1, #d5bcd6) ;
     margin: 0 auto;
     top: 5vh;
     height: 90vh;
@@ -16,14 +19,22 @@ ion-card{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    ;
 
 }
+ion-card-header{
+    ion-card-subtitle{
+        font-size: x-large;
+        color: global.$color-primario
+    }
+}
+
 
 .imagen_login{
     width: 40%;
 }
 
-@media (max-width: 400px){
+@media (max-width: 420px){
     .fondo{
         ion-card{
             width: 80vw;
@@ -31,6 +42,4 @@ ion-card{
     }
 }
 
-.ion-imput{
-    font-family: Arial, Helvetica, sans-serif;
-}
+

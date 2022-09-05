@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <div class="fondo">
+      <ion-card>
+        <img src="../../../assets/img/logo duoc.png" class="imagen_login"/>
+        <ion-card-header>
+          <ion-card-subtitle>INGRESAR</ion-card-subtitle>
+          <ion-card-title>Sus datos</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+  
+          <ion-item>
+            <ion-input type="text" placeholder="Ingrese usuario" [(ngModel)]="user"></ion-input>
+          </ion-item>
+          <ion-button (click)="login()">Recuperar Contraseña</ion-button>
+          <ion-button (click)="navigate()">Volver</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  
+  </ion-content>
+</ion-content>
