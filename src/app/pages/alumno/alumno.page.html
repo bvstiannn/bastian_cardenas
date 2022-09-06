@@ -1,9 +1,41 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>alumno</ion-title>
+    <ion-title>Alumno</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-content fullscreen>
+    <ion-card>
+      <img src="../../../assets/img/logo alumno.png" />
+      <ion-card-header>
+        <ion-card-subtitle>Alumno</ion-card-subtitle>
+        <ion-card-title>Sergio Adasme</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        El alumno Sergio adasme es un alumno de Duoc uc , de la carrera de Ingenieria Informatica
+      </ion-card-content>
+    </ion-card>
+  <ion-list>
+    <ion-item>
+      <ion-icon slot="end" name="reader"></ion-icon>
+      <ion-label>Asistencias</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="end" name="time"></ion-icon>
+      <ion-label>Horario de clase</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="end" name="book"></ion-icon>
+      <ion-label>Asignaturas</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="end" name="bookmark"></ion-icon>
+      <ion-label>Notas</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-toolbar><ion-button slot="end" routerLink="/login">CERRAR SESION</ion-button></ion-toolbar>
+</ion-content>
 
+ 
 </ion-content>

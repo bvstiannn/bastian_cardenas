@@ -29,10 +29,17 @@ export class LoginPage implements OnInit {
       if (usuarioLogin.tipo_usuario == 'administrador') {
         this.router.navigate(['/home']);
       }else{
-        this.router.navigate(['/alumno']);
+        if (usuarioLogin.tipo_usuario == 'alumno'){
+          this.router.navigate(['/alumno']);
+
+
+        }else{
+
+          this.router.navigate(['/profesor']);
+        }
+        
       }
-    }else{
-      this.tostadaError();
+  
     }
   }
 

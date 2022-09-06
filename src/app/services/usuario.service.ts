@@ -8,20 +8,29 @@ export class UsuarioService {
   //variables necesarias para el trabajo del CRUD:
   usuarios: any[] = [
     {
+      rut: '22.222.222-2',
+      nom_completo: 'vegeta',
+      fecha_nac: '1990-03-24',
+      semestre: 1,
+      password: 'vegeta123',
+      tipo_usuario: 'administrador'
+    },
+    {
       rut: '11.111.111-1',
       nom_completo: 'Satan',
       fecha_nac: '1990-03-24',
       semestre: 1,
       password: 'satan123',
-      tipo_usuario: 'administrador'
+      tipo_usuario: 'alumno',
+      email: ''
     },
     {
-      rut: '11.111.111-2',
-      nom_completo: 'Satan',
+      rut: '33.333.333-3',
+      nom_completo: 'juan',
       fecha_nac: '1990-03-24',
       semestre: 1,
-      password: 'satan123',
-      tipo_usuario: 'alumno',
+      password: 'juan123',
+      tipo_usuario: 'profesor',
       email: ''
     }
   ];

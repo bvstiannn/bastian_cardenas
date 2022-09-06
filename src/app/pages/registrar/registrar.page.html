@@ -19,7 +19,7 @@
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Nombre completo</ion-label>
-        <ion-input type="text" placeholder="Ingrese nombre" formControlName="nom_completo"></ion-input>
+        <ion-input type="text" placeholder="Ingrese nombre" formControlName="nom_completo" pattern="[A-Za-z]{1,15}"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Fecha nacimiento</ion-label>
@@ -31,7 +31,7 @@
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Contraseña <ion-icon name="lock-closed-outline"></ion-icon></ion-label>
-        <ion-input type="password" placeholder="Ingrese contraseña" formControlName="password"></ion-input>
+        <ion-input type="password" placeholder="Ingrese contraseña" formControlName="password" pattern="[A-Za-z0-9]{1,15}"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Repita Contraseña</ion-label>
@@ -41,6 +41,7 @@
       <ion-button type="submit" [disabled]="!alumno.valid">REGISTRAR</ion-button>
     </form>
   </ion-card>
+  
   <!-- <h1>LISTA DE USUARIOS</h1>
   <ion-list *ngFor="let usuario of usuarios">
     <p>{{usuario.rut}} - {{usuario.nom_completo}} - {{usuario.fecha_nac}} - {{usuario.semestre}}</p>

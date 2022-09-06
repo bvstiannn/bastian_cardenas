@@ -1,9 +1,34 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>profesor</ion-title>
+    <ion-title>Profesor</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-content fullscreen>
+    <ion-card>
+      <img src="../../../assets/img/logo profe.png" />
+      <ion-card-header>
+        <ion-card-subtitle>Profesor</ion-card-subtitle>
+        <ion-card-title>Eduardo Ugarte</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Don Eduardo Ugarte ha sido profesor del instituto Duoc hace 7 años
+      </ion-card-content>
+    </ion-card>
+  <ion-list>
+    <ion-item>
+      <ion-icon slot="end" name="reader"></ion-icon>
+      <ion-label>Asistencias</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="end" name="people"></ion-icon>
+      <ion-label>Alumnos</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="end" name="book"></ion-icon>
+      <ion-label>Asignaturas</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-toolbar><ion-button slot="end" routerLink="/login">CERRAR SESION</ion-button></ion-toolbar>
 </ion-content>
